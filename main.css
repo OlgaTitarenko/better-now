@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'GothamRounded';
+    src: url('./fonts/GothamRoundedLight.otf');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face{
+    font-family: 'GothamRoundedMedium';
+    src: url('./fonts/GothamRoundedMedium.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    width: 1440px;
+    color: #000000;
+    font-family: GothamRoundedMedium, sans-serif;
+}
+/*header*/
+.head {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    height: 70px;
+    width: 1440px;
+    background-color: #ffe16d;
+}
+.menu-btn{
+    position: relative;
+    display: inline-block;
+    left: 22px;
+    top: 20px;
+    cursor: pointer;
+    width: 38.6px;
+    height: 26.8px;
+    object-fit: contain;
+}
+.logo {
+    position: relative;
+    top: 10px;
+    left: 79.2px;
+    object-fit: contain;
+}
+/*main content*/
+.login-page{
+    display: flex;
+}
+.video {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 690px;
+    height: 790px;
+    background-color: #fff2c0;
+}
+.video-svg{
+    width: 428.6px;
+    height: 253.7px;
+    object-fit: contain;
+}
+
+.login-form {
+    padding-left: 125px;
+    padding-right: 155px;
+}
+.login-form h3 {
+    margin-top: 105px;
+    font-family: GothamRounded, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.login-form p {
+    font-size: 30px;
+    line-height: 1.2;
+}
+.login-form input {
+    width: 450px;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    border: solid 1px #2685b8;
+    padding-left: 10px;
+    color: #2685b8;
+}
+.login-form .Email {
+    font-size: 18px;
+    line-height: 1.44;
+}
+.login-form .Password {
+    font-size: 18px;
+    line-height: 1.44;
+}
+.forgot-pass {
+    font-family: GothamRounded, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #000000;
+    cursor: pointer;
+}
+.login-btn {
+    width: 160px;
+    height: 45px;
+    border-radius: 2px;
+    border: solid 1px #2685b8;
+    background-color: #2685b8;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    margin-top: 96px;
+    float: right;
+}
+
