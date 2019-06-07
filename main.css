@@ -12,37 +12,33 @@
     font-style: normal;
 }
 
+:root{
+    --blackColor: #000000;
+    --lightYellow: #ffe16d;
+    --backgroundVideo: #fff2c0;
+    --blue:  #2685b8;
+}
 body {
     margin: 0;
-    width: 1440px;
-    color: #000000;
+    color: var(--blackColor);
     font-family: GothamRoundedMedium, sans-serif;
 }
 /*header*/
 .head {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
     height: 70px;
-    width: 1440px;
-    background-color: #ffe16d;
+    width: auto;
+    background-color:var(--lightYellow);
 }
 .menu-btn{
     position: relative;
-    display: inline-block;
     left: 22px;
     top: 20px;
     cursor: pointer;
-    width: 38.6px;
-    height: 26.8px;
-    object-fit: contain;
 }
 .logo {
     position: relative;
-    top: 10px;
-    left: 79.2px;
-    object-fit: contain;
+    top:-15px;
+    left:80px;
 }
 /*main content*/
 .login-page{
@@ -54,19 +50,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 690px;
+    width: 50%;
     height: 790px;
-    background-color: #fff2c0;
+    background-color: var(--backgroundVideo);
 }
 .video-svg{
     width: 428.6px;
     height: 253.7px;
     object-fit: contain;
 }
-
 .login-form {
     padding-left: 125px;
     padding-right: 155px;
+    width: 50%
 }
 .login-form h3 {
     margin-top: 105px;
@@ -84,9 +80,9 @@ body {
     height: 50px;
     margin-bottom: 25px;
     border-radius: 2px;
-    border: solid 1px #2685b8;
+    border: solid 1px var(--blue);
     padding-left: 10px;
-    color: #2685b8;
+    color: var(--blue);
 }
 .login-form .Email {
     font-size: 18px;
@@ -100,15 +96,15 @@ body {
     font-family: GothamRounded, sans-serif;
     font-size: 15px;
     line-height: 1.4;
-    color: #000000;
+    color: var(--blackColor);
     cursor: pointer;
 }
 .login-btn {
     width: 160px;
     height: 45px;
     border-radius: 2px;
-    border: solid 1px #2685b8;
-    background-color: #2685b8;
+    border: solid 1px var(--blue);
+    background-color: var(--blue);
     color: #ffffff;
     font-size: 16px;
     display: block;
@@ -116,3 +112,31 @@ body {
     float: right;
 }
 
+
+@media (min-width: 1071px) and (max-width: 1200px) {
+    .login-form {
+        padding-left: 75px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1070px) {
+    .video{
+        margin-left: 10px;
+    }
+    .login-form {
+        padding-left: 20px;
+    }
+}
+@media (min-width: 400px) and (max-width: 768px) {
+    .login-page{
+        flex-direction: column;
+        margin: auto;
+    }
+    .video{
+        align-items: normal;
+        height: 350px;
+        margin: auto;
+    }
+
+}
