@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_4096" width="450" height="45" data-name="Group 4096" viewBox="0 0 450 45">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#1d45c7}.cls-2{fill:#1d45c7;font-size:16px;font-family:GothamRounded-Bold,Gotham Rounded;font-weight:700}.cls-3{fill:#fbbb00}.cls-4{fill:#518ef8}.cls-5{fill:#28b446}.cls-6{fill:#f14336}.cls-7{stroke:none}.cls-8{fill:none}
+        </style>
+    </defs>
+    <g id="Rectangle_1090" class="cls-1" data-name="Rectangle 1090">
+        <rect width="450" height="45" class="cls-7" rx="5"/>
+        <rect width="449" height="44" x=".5" y=".5" class="cls-8" rx="4.5"/>
+    </g>
+    <text id="INICIAR_SESSÃO_COM_CONTA_GOOGLE" class="cls-2" data-name="INICIAR SESSÃO COM CONTA GOOGLE" transform="translate(225 29)">
+        <tspan x="-160.648" y="0">INICIAR SESSÃO COM CONTA GOOGLE</tspan>
+    </text>
+    <g id="search" transform="translate(20 12.315)">
+        <path id="Path_1496" d="M4.363 144.848l-.685 2.558-2.5.053a9.859 9.859 0 0 1-.072-9.191l2.23.409.977 2.216a5.874 5.874 0 0 0 .055 3.955z" class="cls-3" data-name="Path 1496" transform="translate(0 -132.952)"/>
+        <path id="Path_1497" d="M271.082 208.176a9.838 9.838 0 0 1-3.509 9.514l-2.808-.143-.4-2.481a5.866 5.866 0 0 0 2.524-3h-5.263v-3.894h9.454z" class="cls-4" data-name="Path 1497" transform="translate(-251.569 -200.172)"/>
+        <path id="Path_1498" d="M45.339 315.03a9.846 9.846 0 0 1-14.831-3.011l3.19-2.611a5.854 5.854 0 0 0 8.435 3z" class="cls-5" data-name="Path 1498" transform="translate(-29.336 -297.513)"/>
+        <path id="Path_1499" d="M43.648 2.266l-3.188 2.61a5.853 5.853 0 0 0-8.629 3.065l-3.206-2.625a9.844 9.844 0 0 1 15.024-3.05z" class="cls-6" data-name="Path 1499" transform="translate(-27.524)"/>
+    </g>
+</svg>

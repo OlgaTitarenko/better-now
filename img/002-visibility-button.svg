@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35.2" height="24" viewBox="0 0 35.2 24">
+    <defs>
+        <style>
+            .cls-1{fill:#1d45c7}
+        </style>
+    </defs>
+    <g id="_002-visibility-button" data-name="002-visibility-button" transform="translate(0 -89.25)">
+        <g id="visibility" transform="translate(0 89.25)">
+            <path id="Path_1503" d="M17.6 89.25a18.851 18.851 0 0 0-17.6 12 18.907 18.907 0 0 0 35.2 0 18.851 18.851 0 0 0-17.6-12zm0 20a8 8 0 1 1 8-8 7.922 7.922 0 0 1-8 8zm0-12.8a4.8 4.8 0 1 0 4.8 4.8 4.714 4.714 0 0 0-4.8-4.8z" class="cls-1" data-name="Path 1503" transform="translate(0 -89.25)"/>
+        </g>
+    </g>
+</svg>

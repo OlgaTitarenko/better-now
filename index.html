@@ -9,6 +9,7 @@
           crossorigin="anonymous">
 -->
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="head">
@@ -18,7 +19,6 @@
         </div>
     </header>
     <main class=" login-page">
-
         <section class=" video">
             <img src="img/Video.svg"
                  class="video-svg">
@@ -29,12 +29,18 @@
             </h3>
             <p><b>Por favor entre com o seu
                 email e password</b></p>
-            <form >
-                <input type="email" class="Email" placeholder="Email" />
-                <input type="password" class="Password" placeholder="Password" />
+            <form class="form" >
+                <input type="email" class="Email" placeholder="Email" data-type="email" name="email" required />
+                <span class="wrong">Formato de email inválido</span>
+                <div class="div-pass">
+                    <input type="password" class="Password" placeholder="Password" name="password" required onclick="onClickPassword()"/>
+                    <img src="img/002-visibility-button.svg" class="-visibility-button" hidden onclick="isVisible()">
+                </div>
+                <span class="wrong">Email ou password errados: contacte o administrador.</span>
             </form>
-            <a href="#" class="forgot-pass">Esqueci-me da minha password</a>
             <button class="login-btn"><b>INICIAR SESSÃO</b></button>
+            <img src="img/Button-google.svg" class="login-btn-google" />
+            <a href="#" class="forgot-pass">Esqueci-me da minha password</a>
         </section>
         
     </main>
