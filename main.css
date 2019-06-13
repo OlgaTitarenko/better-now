@@ -59,7 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 790px;
+    height: auto;
     background-color: var(--backgroundVideo);
 }
 .video-svg{
@@ -112,6 +112,7 @@ body {
 }
 .div-pass{
     position: relative;
+    width: 450px;
 }
 .login-form .Password {
     font-size: 18px;
