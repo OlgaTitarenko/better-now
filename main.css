@@ -138,7 +138,6 @@ input:invalid:not(:placeholder-shown) {
 input:invalid:not(:placeholder-shown) + .wrong {
     display: block;
 }
-
 .login-btn {
     width: 450px;
     height: 45px;
