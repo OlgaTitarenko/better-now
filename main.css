@@ -36,6 +36,8 @@ body {
     height: 70px;
     width: auto;
     background-color:var(--lightYellow);
+    display: flex;
+    justify-content: space-between;
 }
 .menu-btn{
     position: relative;
