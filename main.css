@@ -23,7 +23,13 @@
     --lightYellow: #ffe16d;
     --backgroundVideo: #fff2c0;
     --blue:  #2685b8;
+    --lightBlue: #63aed8;
     --wrong: #f95f62;
+    --blueP: #06d3b5;
+    --greenP: #26b706;
+    --yellowP: #fcb004;
+    --orangeP: #fa6707;
+    --redP: #ff1700;
 }
 body {
     margin: 0;
@@ -32,9 +38,7 @@ body {
     font-family: GothamRoundedMedium, sans-serif;
 }
 /*header*/
-.head {
-    height: 70px;
-    width: auto;
+.topbar{
     background-color:var(--lightYellow);
     display: flex;
     justify-content: space-between;
@@ -50,7 +54,34 @@ body {
     top:-20px;
     left:80px;
 }
-/*main content*/
+.doctor-head{
+    padding-right: 37px;
+    display: flex;
+}
+.doctor-name{
+    padding-right: 11px;
+}
+.doctor-name h3{
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: right;
+    margin-bottom: 7px;
+}
+.doctor-name p{
+    font-family: GothamRounded, sans-serif;
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+}
+.doctor-head img{
+    width: 55px;
+    height: 55px;
+    margin-top: 8px;
+    border: solid 1px var(--blue);
+    border-radius: 50%;
+}
+/*main logo content*/
 .login-page{
     display: flex;
 }
@@ -121,7 +152,6 @@ body {
     line-height: 1.44;
 
 }
-
 .-visibility-button{
     width: 35.2px;
     height: 24px;
@@ -130,7 +160,6 @@ body {
     top: 11px;
     right: 13px;
 }
-
 input:valid:not(:placeholder-shown) {
     border-color: var(--blue);
 }
@@ -165,7 +194,80 @@ input:invalid:not(:placeholder-shown) + .wrong {
     color: var(--blackColor);
     cursor: pointer;
 }
-
+/*main client page*/
+.customer{
+    background-color: rgba(189,227,247,0.5);
+    border-left: 10px solid  var(--lightBlue);
+    margin: 7px;
+    -webkit-border-radius: 0 10px 0 0;
+    -moz-border-radius: 0 10px 0 0;
+    border-radius: 0 10px 0 0;
+    position: relative;
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 24px;
+}
+.customer .exit{
+    font-size: 14px;
+    color: #4a4a4a;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.customer .exit > img {
+    background-color: #4a4a4a;
+    border-radius: 50%;
+    border: 5px solid #4a4a4a;
+    margin-left: 3px;
+}
+.customer-detail{
+    display: flex;
+    font-size: 18px;
+    font-family: GothamRoundedBookItalic, sans-serif;
+    align-items: center;
+}
+.customer-detail > div {
+    margin: 10px;
+}
+.customer-detail .medicine{
+    border-left: 1px solid var(--lightBlue);
+    border-right: 1px solid var(--lightBlue);
+    padding: 15px;
+}
+.customer-detail .diagram {
+    display: flex;
+}
+.diagram > div {
+    width: 90px;
+    height: 150px;
+    display: flex;
+}
+.diagram .blue {
+    border-bottom: 18px solid var(--blueP);
+}
+.diagram .green {
+    border-bottom: 18px solid var(--greenP);
+}
+.diagram .yellow {
+    border-bottom: 18px solid var(--yellowP);
+}
+.diagram .orange {
+    border-bottom: 18px solid var(--orangeP);
+}
+.diagram .red {
+    border-bottom: 18px solid var(--redP);
+}
+/*you need to change border color in next position to the class number*/
+.number{
+    padding: 5px;
+    border-bottom: 3px solid var(--greenP);
+}
+.person {
+    display: flex;
+    flex-direction: column;
+}
+.person img{
+    padding-top: 5px;
+}
 
 @media (max-width: 768px) {
     .login-page{

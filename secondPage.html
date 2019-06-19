@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Better-now</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header  id="topbar" class="container-fluid row topbar ">
+        <div>
+            <img src="img/Menu.svg" alt="menu button" class="menu-btn">
+            <div class="logo" >
+                <img src="img/Logo.svg" alt="Better Now logo" >
+            </div>
+        </div>
+        <div class="user doctor-head">
+            <div class="doctor-name">
+                <h3 id="displayName">Dr. José Azevedo</h3>
+                <p id="email">Medicina Geral e Familiar</p>
+            </div>
+            <div  id="photo">
+                <img src="img/doctor.jpg" alt="" id="photo-img">
+            </div>
+        </div>
+</header>
+
+    <main class="row flex-grow-1 h-100" id="main-area">
+        <div class="col-lg-8 col-md-8 col-sm-8 two-thirds flex-grow-1">
+            <!-- customer top panel -->
+            <div class="row customer" id="panel-customer">
+                <div class="col-lg-12 col-md-12">
+                    <h2>Customer name</h2>
+                    <div class="exit">
+                        Fechar 	<img src="img/cancel-music.svg">
+
+                    </div>
+                    <div id="customer-detail" class="customer-detail">
+                        <div class="sizes">
+                            <p>47 anos</p>
+                            <p>1.67 m</p>
+                            <p>57 kg</p>
+                        </div>
+                        <div class="medicine">
+                            <p><img src="img/003-doctor-stethoscope.svg" /> s/ doença crónica</p>
+                            <p><img src="img/004-pills.svg" /> s/ medicação regular</p>
+                        </div>
+                        <div class="diagram">
+                            <div class="blue"></div>
+                            <div class="green">
+                                <div>
+                                    <span class="number">18,5</span>
+                                </div>
+                                <div class="person">
+                                    <img src="img/persone.svg" />
+                                    <img src="img/polygon.svg" />
+                                </div>
+
+                            </div>
+                            <div class="yellow"></div>
+                            <div class="orange"></div>
+                            <div class="red"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-3" id="panel-timeline">
+                    <h2>Timeline</h2>
+                    <div id="timeline-detail"></div>
+                </div>
+                <div class="col-lg-9 col-md-9" id="panel-notes">
+                    <h2>Notas</h2>
+                    <div id="notes-detail"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div id="panel-mp-call-control">
+                <h2>Call-control</h2>
+            </div>
+            <div id="panel-mp-status">
+                <h2>Estado atendimento</h2>
+                <div class="row">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="set-status">
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="status-1" data-status="1" autocomplete="off"> Indisponível
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="status-2" data-status="2" autocomplete="off"> Ocupado
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="status-3" data-status="3" autocomplete="off"> On-call
+                        </label>
+                        <label class="btn btn-secondary">
+                            <input type="radio" name="options" id="status-4" data-status="4" autocomplete="off"> Disponível
+                        </label>
+                    </div>
+                </div>
+            </div>
+       <!-- <div class="left-side">
+            <div class="client-status">
+
+            </div>
+        </div>
+        <div class="right-side">
+-->
+        </div>
+    </main>
+
+</body>
+</html>
