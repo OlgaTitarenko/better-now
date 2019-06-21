@@ -21,6 +21,8 @@
 :root{
     --blackColor: #000000;
     --lightYellow: #ffe16d;
+    --timelineYellow: #ffe891;
+    --timelineActive: #bde3f7;
     --backgroundVideo: #fff2c0;
     --blue:  #2685b8;
     --lightBlue: #63aed8;
@@ -256,7 +258,10 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .diagram .red {
     border-bottom: 18px solid var(--redP);
 }
-/*you need to change border color in next position to the class number*/
+.diagram .active{
+    width: 120px;
+}
+/*you need to change border color in next position to the class number and add class active*/
 .number{
     padding: 5px;
     border-bottom: 3px solid var(--greenP);
@@ -268,6 +273,78 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .person img{
     padding-top: 5px;
 }
+/*timeline*/
+.timelineContainer{
+    width: 260px;
+    margin: 0;
+}
+.timelineContainer h2{
+    font-family: GothamRounded, sans-serif;
+    font-size: 18px;
+    border-bottom: 3px solid var(--timelineYellow);
+    margin: 20px;
+    width: 180px;
+}
+.timeline > ul {
+    list-style-type: none;
+    position: relative;
+    width: 260px;
+}
+.timeline:before {
+    content: ' ';
+    background: var(--timelineYellow);
+    display: inline-block;
+    position: absolute;
+    left: 27px;
+    width: 6px;
+    height: 100%;
+    z-index: 400;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.timeline > ul > li {
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.timeline > ul > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border: 3px solid #63aed8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+.timeline > ul > li > h6{
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 16px;
+}
+.timeline > ul > li > span {
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 14px;
+}
+.timeline > a {
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 12px;
+    color: #06227e;
+    width: 260px;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+    bottom: 20px;
+    left: 48px;
+}
+
+
 
 @media (max-width: 768px) {
     .login-page{
