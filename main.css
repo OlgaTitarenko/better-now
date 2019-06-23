@@ -22,14 +22,18 @@
     --blackColor: #000000;
     --lightYellow: #ffe16d;
     --timelineYellow: #ffe891;
+    --waiting-call: #ffc82c;
     --timelineActive: #bde3f7;
     --backgroundVideo: #fff2c0;
+    --call-list: #dfe1e5;
     --blue: #2685b8;
     --darkBlue: #06227e;
     --lightBlue: #63aed8;
+    --on-call: #1d45c7;
     --wrong: #f95f62;
     --blueP: #06d3b5;
     --greenP: #26b706;
+    --start-call:#77d353;
     --yellowP: #fcb004;
     --orangeP: #fa6707;
     --redP: #ff1700;
@@ -46,6 +50,7 @@ body {
     background-color:var(--lightYellow);
     display: flex;
     justify-content: space-between;
+    width: 102%;
 }
 .menu-btn{
     position: relative;
@@ -262,7 +267,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .diagram .active{
     width: 120px;
 }
-/*you need to change border color in next position to the class number and add class active*/
+
 .number-blue {
     padding: 5px;
     border-bottom: 3px solid var(--blueP);
@@ -372,8 +377,219 @@ input:invalid:not(:placeholder-shown) + .wrong {
 /*notes container*/
 .notesContainer{
     background-color: var(--timelineActive);
-
 }
+
+/*call container*/
+.call-panel{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin: 9px;
+}
+.call-panel h2{
+    color: var(--darkBlue);
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 14px;
+    margin: 7px;
+}
+.call-panel  .call-list {
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+}
+.call-list:before{
+    position: absolute;
+    content: '';
+    width: 300px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: var(--call-list);
+    left: 80px;
+    top:0;
+    z-index: 400;
+}
+.btn{
+    padding: 10px;
+}
+.call-list input{
+    content: '';
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.call-list > .exit-call{
+    color: var(--wrong);
+    position: relative;
+}
+.exit-call:before{
+    content: '';
+    position: absolute;
+    background-image: url("./img/exit-call.svg");
+    left:40%;
+    top: -35px;
+    width: 32px;
+    height: 32px;
+    z-index: 500;
+}
+.call-list > .waiting-call{
+    color: var(--waiting-call);
+    position: relative;
+}
+.waiting-call:before{
+    content: '';
+    position: absolute;
+    background-image: url("./img/waiting-call.svg");
+    left:40%;
+    top: -35px;
+    width: 32px;
+    height: 32px;
+    z-index: 500;
+}
+.call-list > .on-call{
+    color: var(--on-call);
+    position: relative;
+}
+.on-call:before{
+    content: '';
+    position: absolute;
+    background-image: url("./img/on-call.svg");
+    left:40%;
+    top: -35px;
+    width: 32px;
+    height: 32px;
+    z-index: 500;
+}
+.call-list > .start-call{
+    color: var(--start-call);
+    position: relative;
+}
+.start-call:before{
+    content: '';
+    position: absolute;
+    background-image: url("./img/on-call.svg");
+    left:40%;
+    top: -35px;
+    width: 32px;
+    height: 32px;
+    z-index: 500;
+    padding: 10px;
+    border-radius: 50%;
+    border: solid 1px var(--start-call);
+}
+/*last consultation panel*/
+.last-consultations{
+    background-color: #fff2c0;
+    margin: 9px;
+    color: var(--darkBlue);
+}
+.last-consultations h2{
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 18px;
+    padding: 16px;
+}
+.last-consultations a{
+    padding: 16px;
+    margin-left: 16px;
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.consultations-block{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.consultations-block  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.consultations-block h3{
+    font-family: GothamRounded, sans-serif;
+    font-size: 7px;
+    margin: 0;
+}
+.consultations-block p {
+    font-family: GothamRounded, sans-serif;
+    font-size: 6px;
+}
+.consultation-1{
+    width: 72.4px;
+    height: 79.3px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 1;
+    margin-right: -15px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.consultation-2{
+    width: 99.3px;
+    height: 108.7px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 2;
+    margin-right: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.consultation-2 > img, .consultation-4 > img{
+    width: 42px;
+    height: 42px;
+}
+.consultation-3{
+    width: 123.7px;
+    height: 135.5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: var(--lightYellow);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.consultation-3 > img{
+    width: 55px;
+    height: 55px;
+}
+.consultation-3 > h3 {
+    font-size: 10px;
+}
+.consultation-3 > p{
+    font-size: 9px;
+}
+.consultation-4{
+    width: 99.3px;
+    height: 108.7px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 4;
+    margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.consultation-5{
+    width: 72.4px;
+    height: 79.3px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    z-index: 3;
+    margin-left: -15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+
 
 
 @media (max-width: 768px) {

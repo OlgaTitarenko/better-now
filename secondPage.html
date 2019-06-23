@@ -154,29 +154,65 @@
         </div>
 
         <div class="col-md-4">
-            <div id="panel-mp-call-control">
-                <h2>Call-control</h2>
-            </div>
-            <div id="panel-mp-status">
-                <h2>Estado atendimento</h2>
+            <div class="call-panel" id="panel-mp-call-control">
+                <h2>Seleccione o seu estado:</h2>
                 <div class="row">
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons" id="set-status">
-                        <label class="btn btn-secondary">
+                    <div class="btn-group btn-group-toggle call-list" data-toggle="buttons" id="set-status">
+                        <label class="btn exit-call">
                             <input type="radio" name="options" id="status-1" data-status="1" autocomplete="off"> Indisponível
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn waiting-call">
                             <input type="radio" name="options" id="status-2" data-status="2" autocomplete="off"> Ocupado
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn on-call">
                             <input type="radio" name="options" id="status-3" data-status="3" autocomplete="off"> On-call
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn start-call">
                             <input type="radio" name="options" id="status-4" data-status="4" autocomplete="off"> Disponível
                         </label>
                     </div>
                 </div>
             </div>
+            <div class="last-consultations" id="panel-last-consultations">
+                <h2>ÚLTIMAS CONSULTAS</h2>
+                <div class="row">
+                    <div class="consultations-block">
+                        <div class="consultation-1">
+                            <img src="img/doctor.jpg" alt="" id="photo-img-const1">
+                            <h3>Antonio Mendes</h3>
+                            <p>47 anos</p>
+                        </div>
+                        <div class="consultation-2">
+                            <img src="img/doctor.jpg" alt="" id="photo-img-const2">
+                            <h3>Antonio Mendes</h3>
+                            <p>47 anos</p>
+                        </div>
+                        <div class="consultation-3">
+                            <img src="img/doctor.jpg" alt="" id="photo-img-const3">
+                            <h3>Antonio Mendes</h3>
+                            <p>47 anos</p>
+                        </div>
+                        <div class="consultation-4">
+                            <img src="img/doctor.jpg" alt="" id="photo-img-const4">
+                            <h3>Antonio Mendes</h3>
+                            <p>47 anos</p>
+                        </div>
+                        <div class="consultation-5">
+                            <img src="img/doctor.jpg" alt="" id="photo-img-const5">
+                            <h3>Antonio Mendes</h3>
+                            <p>47 anos</p>
+                        </div>
+                    </div>
+                    <a href="#">Ver Histórico de consultas</a>
+                </div>
 
+            </div>
+            <div id="panel-waiting-patients">
+                <h2>ÚLTIMAS CONSULTAS</h2>
+                <div class="row">
+
+                </div>
+            </div>
         </div>
     </main>
 
