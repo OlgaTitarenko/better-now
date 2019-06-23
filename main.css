@@ -24,7 +24,8 @@
     --timelineYellow: #ffe891;
     --timelineActive: #bde3f7;
     --backgroundVideo: #fff2c0;
-    --blue:  #2685b8;
+    --blue: #2685b8;
+    --darkBlue: #06227e;
     --lightBlue: #63aed8;
     --wrong: #f95f62;
     --blueP: #06d3b5;
@@ -32,6 +33,7 @@
     --yellowP: #fcb004;
     --orangeP: #fa6707;
     --redP: #ff1700;
+    --customerExit:#4a4a4a;
 }
 body {
     margin: 0;
@@ -152,7 +154,6 @@ body {
 .login-form .Password {
     font-size: 18px;
     line-height: 1.44;
-
 }
 .-visibility-button{
     width: 35.2px;
@@ -210,15 +211,15 @@ input:invalid:not(:placeholder-shown) + .wrong {
 }
 .customer .exit{
     font-size: 14px;
-    color: #4a4a4a;
+    color: var(--customerExit);
     position: absolute;
     top: 15px;
     right: 15px;
 }
 .customer .exit > img {
-    background-color: #4a4a4a;
+    background-color: var(--customerExit);
     border-radius: 50%;
-    border: 5px solid #4a4a4a;
+    border: 5px solid var(--customerExit);
     margin-left: 3px;
 }
 .customer-detail{
@@ -262,18 +263,37 @@ input:invalid:not(:placeholder-shown) + .wrong {
     width: 120px;
 }
 /*you need to change border color in next position to the class number and add class active*/
-.number{
+.number-blue {
+    padding: 5px;
+    border-bottom: 3px solid var(--blueP);
+}
+.number-green {
     padding: 5px;
     border-bottom: 3px solid var(--greenP);
+}
+.number-yellow {
+    padding: 5px;
+    border-bottom: 3px solid var(--yellowP);
+}
+.number-orange {
+    padding: 5px;
+    border-bottom: 3px solid var(--orangeP);
+}
+.number-red {
+    padding: 5px;
+    border-bottom: 3px solid var(--redP);
 }
 .person {
     display: flex;
     flex-direction: column;
 }
-.person img{
+.person-svg {
     padding-top: 5px;
+    height: 105px;
 }
+
 /*timeline*/
+
 .timelineContainer{
     width: 260px;
     margin: 0;
@@ -307,9 +327,9 @@ input:invalid:not(:placeholder-shown) + .wrong {
     position: relative;
 }
 .timeline > ul > li {
-    margin: 0;
     padding-left: 20px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    margin-left: -10px;
 }
 .timeline > ul > li:before {
     content: ' ';
@@ -318,7 +338,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     position: absolute;
     border-radius: 50%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-    border: 3px solid #63aed8;
+    border: 3px solid var(--lightBlue);
     left: 20px;
     width: 20px;
     height: 20px;
@@ -332,10 +352,16 @@ input:invalid:not(:placeholder-shown) + .wrong {
     font-family: GothamRoundedBookItalic, sans-serif;
     font-size: 14px;
 }
+.timeline > ul > .active {
+    background-color: var(--timelineActive);
+}
+.timeline > ul > .active:before {
+    background-color: var(--lightBlue);
+}
 .timeline > a {
     font-family: GothamRoundedBookItalic, sans-serif;
     font-size: 12px;
-    color: #06227e;
+    color: var(--darkBlue);
     width: 260px;
     display: inline-block;
     position: relative;
@@ -343,7 +369,11 @@ input:invalid:not(:placeholder-shown) + .wrong {
     bottom: 20px;
     left: 48px;
 }
+/*notes container*/
+.notesContainer{
+    background-color: var(--timelineActive);
 
+}
 
 
 @media (max-width: 768px) {

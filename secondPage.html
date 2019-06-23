@@ -35,46 +35,82 @@
             <!-- customer top panel -->
             <div class="row customer" id="panel-customer">
                 <div class="col-lg-12 col-md-12">
-                    <h2>Customer name</h2>
+                    <h2 id="panel-customer-name">Customer name</h2>
                     <div class="exit">
                         Fechar 	<img src="img/cancel-music.svg">
                     </div>
                     <div id="customer-detail" class="customer-detail">
                         <div class="sizes">
-                            <p>47 anos</p>
-                            <p>1.67 m</p>
-                            <p>57 kg</p>
+                            <p id="panel-customer-age">47 anos</p>
+                            <p id="panel-customer-height">1.67 m</p>
+                            <p id="panel-customer-weight">57 kg</p>
                         </div>
                         <div class="medicine">
-                            <p><img src="img/003-doctor-stethoscope.svg" /> s/ doença crónica</p>
-                            <p><img src="img/004-pills.svg" /> s/ medicação regular</p>
+                            <p><img src="img/003-doctor-stethoscope.svg" /><span id="panel-customer-cronical"></span></p>
+                            <p><img src="img/004-pills.svg" /><span id="panel-customer-medication"></span></p>
                         </div>
                         <div class="diagram">
-                            <div class="blue"></div>
-                            <div class="green active">
-                                <div>
-                                    <span class="number">18,5</span>
+                            <div class="blue">
+                                <div class="blue-show-hide bmi-show-hide">
+                                    <span class="panel-customer-bmi number-blue">18,5</span>
                                 </div>
-                                <div class="person">
-                                    <img src="img/persone.svg" />
-                                    <img src="img/polygon.svg" />
+                                <div class="blue-show-hide bmi-show-hide person">
+                                    <img class="male person-svg" src="img/man1.svg" />
+                                    <img class="female person-svg" src="img/woman1.svg" />
+                                    <img class="person-polygon" src="img/polygon-blue.svg" />
                                 </div>
-
                             </div>
-                            <div class="yellow"></div>
-                            <div class="orange"></div>
-                            <div class="red"></div>
+                            <div class="green">
+                                <div class="green-show-hide bmi-show-hide">
+                                    <span class="panel-customer-bmi number-green">18,5</span>
+                                </div>
+                                <div class="green-show-hide bmi-show-hide person">
+                                    <img class="male person-svg" src="img/man2.svg" />
+                                    <img class="female person-svg" src="img/woman2.svg" />
+                                    <img class="person-polygon" src="img/polygon-green.svg" />
+                                </div>
+                            </div>
+                            <div class="yellow">
+                                <div class="yellow-show-hide bmi-show-hide">
+                                    <span class="panel-customer-bmi number-yellow">18,5</span>
+                                </div>
+                                <div class="yellow-show-hide bmi-show-hide person">
+                                    <img class="male person-svg" src="img/man3.svg" />
+                                    <img class="female person-svg" src="img/woman3.svg" />
+                                    <img class="person-polygon" src="img/polygon-yellow.svg" />
+                                </div>
+                            </div>
+                            <div class="orange">
+                                <div class="orange-show-hide bmi-show-hide">
+                                    <span class="panel-customer-bmi number-orange">18,5</span>
+                                </div>
+                                <div class="orange-show-hide bmi-show-hide person">
+                                    <img class="male person-svg" src="img/man4.svg" />
+                                    <img class="female person-svg" src="img/woman4.svg" />
+                                    <img class="person-polygon" src="img/polygon-orange.svg" />
+                                </div>
+                            </div>
+                            <div class="red">
+                                <div class="red-show-hide bmi-show-hide">
+                                    <span class="panel-customer-bmi number-red">18,5</span>
+                                </div>
+                                <div class="red-show-hide bmi-show-hide person">
+                                    <img class="male person-svg" src="img/man5.svg" />
+                                    <img class="female person-svg" src="img/woman5.svg" />
+                                    <img class="person-polygon" src="img/polygon-red.svg" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row timelineContainer">
-                <div class="col-lg-3 col-md-3" id="panel-timeline">
+            <div class="row ">
+                <div class="col-lg-3 col-md-3 timelineContainer" id="panel-timeline">
                     <h2>ÚLTIMAS CONSULTAS</h2>
                     <div id="timeline-detail" class="timeline">
                         <ul>
-                            <li>
+                            <li class="active">
                                 <h6>26 Abr 2019</h6>
                                 <span>Dr. José Azevedo</span>
                             </li>
@@ -110,7 +146,7 @@
                         <a href="#">Ver Mais Registos de Consultas</a>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-9" id="panel-notes">
+                <div class="col-lg-9 col-md-9 notesContainer" id="panel-notes">
                     <h2>Notas</h2>
                     <div id="notes-detail"></div>
                 </div>
@@ -140,13 +176,7 @@
                     </div>
                 </div>
             </div>
-       <!-- <div class="left-side">
-            <div class="client-status">
 
-            </div>
-        </div>
-        <div class="right-side">
--->
         </div>
     </main>
 
