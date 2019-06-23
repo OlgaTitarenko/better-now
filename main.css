@@ -31,10 +31,12 @@
     --lightBlue: #63aed8;
     --on-call: #1d45c7;
     --wrong: #f95f62;
+    --pink: #ffd2c0;
     --blueP: #06d3b5;
     --greenP: #26b706;
     --start-call:#77d353;
     --yellowP: #fcb004;
+    --timeOrange: #ff6629;
     --orangeP: #fa6707;
     --redP: #ff1700;
     --customerExit:#4a4a4a;
@@ -587,8 +589,48 @@ input:invalid:not(:placeholder-shown) + .wrong {
     align-items: center;
     padding-top: 15px;
 }
-
-
+/* clients waiting panel */
+.waiting-patiens{
+    height: 100%;
+    margin: 9px;
+    padding: 15px;
+    background-color: var(--pink);
+    color: var(--darkBlue);
+}
+.waiting-patiens h2{
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 18px;
+    padding: 16px;
+}
+.one-waiting{
+    width: 371.2px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px 0 0 50px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.one-waiting > img{
+    margin-left: 5px;
+}
+.patient-info > h4 {
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.patient-info > p{
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 16px;
+}
+.time {
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 24px;
+    margin-right: 15px;
+    color: var(--timeOrange);
+}
 
 
 
