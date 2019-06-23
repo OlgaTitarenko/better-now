@@ -298,7 +298,9 @@ input:invalid:not(:placeholder-shown) + .wrong {
     padding-top: 5px;
     height: 105px;
 }
-
+.person-polygon {
+    padding-top: 5px;
+}
 /*timeline*/
 
 .timelineContainer{
