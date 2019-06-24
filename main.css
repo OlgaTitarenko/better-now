@@ -31,7 +31,8 @@
     --lightBlue: #63aed8;
     --on-call: #1d45c7;
     --wrong: #f95f62;
-    --pink: #ffd2c0;
+    --waitingPanel: #ffd2c0;
+    --consultationsPanel: #fff2c0;
     --blueP: #06d3b5;
     --greenP: #26b706;
     --start-call:#77d353;
@@ -339,6 +340,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     padding-left: 20px;
     margin-bottom: 30px;
     margin-left: -10px;
+    width: 90%;
 }
 .timeline > ul > li:before {
     content: ' ';
@@ -379,10 +381,59 @@ input:invalid:not(:placeholder-shown) + .wrong {
     left: 48px;
 }
 /*notes container*/
-.notesContainer{
+.new-notes{
+    color: var(--darkBlue);
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 20px;
+    margin: 17px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.new-notes > img {
+    background-color: var(--darkBlue);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.one-note{
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.one-note > .note-date h3{
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 18px;
+}
+.one-note > .note-date > p{
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 16px;
+}
+.one-note > .consultation-note {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 12px;
+}
+.one-note > .text {
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.one-note > .associated{
+    border-top: 1px dashed black;
+    padding-top: 15px;
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 16px;
+}
+.active-note{
     background-color: var(--timelineActive);
 }
-
 /*call container*/
 .call-panel{
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -481,7 +532,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
 }
 /*last consultation panel*/
 .last-consultations{
-    background-color: #fff2c0;
+    background-color: var(--consultationsPanel);
     margin: 9px;
     color: var(--darkBlue);
 }
@@ -596,7 +647,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     height: 100%;
     margin: 9px;
     padding: 15px;
-    background-color: var(--pink);
+    background-color: var(--waitingPanel);
     color: var(--darkBlue);
 }
 .waiting-patiens h2{

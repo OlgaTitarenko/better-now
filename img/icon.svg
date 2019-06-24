@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="78.888" height="78.888" viewBox="0 0 78.888 78.888">
+    <defs>
+        <style>
+            .cls-1{fill:#ffe16d}.cls-2{fill:#63aed8}
+        </style>
+    </defs>
+    <g id="Group_4093" data-name="Group 4093" transform="translate(-1041.68 -518.77)">
+        <path id="Path_275" d="M39.444 0A39.444 39.444 0 1 1 0 39.444 39.444 39.444 0 0 1 39.444 0z" class="cls-1" data-name="Path 275" transform="translate(1041.68 518.77)"/>
+        <path id="Union_1" d="M0 46.235v-5.779C0 34.1 10.4 28.9 23.117 28.9s23.117 5.2 23.117 11.56v5.779zM11.557 11.56a11.559 11.559 0 1 1 11.56 11.557 11.56 11.56 0 0 1-11.56-11.557z" class="cls-2" data-name="Union 1" transform="translate(1058.219 535.309)"/>
+    </g>
+</svg>
