@@ -551,7 +551,9 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .consultations-block{
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
+    width: 100%;
 }
 .consultations-block  img{
     width: 30px;
@@ -567,46 +569,43 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .consultations-block p {
     font-family: GothamRounded, sans-serif;
     font-size: 6px;
+    padding-bottom: 15px;
 }
 .consultation-1{
-    width: 72.4px;
-    height: 79.3px;
+    height: 60%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 1;
-    margin-right: -15px;
-    margin-left: 30px;
+    margin-right: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 .consultation-2{
-    width: 99.3px;
-    height: 108.7px;
+    height: 80%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 2;
-    margin-right: -15px;
+    margin-right: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 .consultation-2 > img, .consultation-4 > img{
     width: 42px;
     height: 42px;
 }
 .consultation-3{
-    width: 123.7px;
-    height: 135.5px;
+    height: 100%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: var(--lightYellow);
     z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding: 20px;
 }
 .consultation-3 > img{
     width: 55px;
@@ -619,28 +618,35 @@ input:invalid:not(:placeholder-shown) + .wrong {
     font-size: 9px;
 }
 .consultation-4{
-    width: 99.3px;
-    height: 108.7px;
+    height: 80%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 4;
-    margin-left: -15px;
+    margin-left: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding: 15px;
 }
 .consultation-5{
-    width: 72.4px;
-    height: 79.3px;
+    height: 60%;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #ffffff;
     z-index: 3;
-    margin-left: -15px;
+    margin-left: -5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding: 15px;
+}
+.consultations-block > .prew , .consultations-block > .next{
+    cursor:pointer;
+    color: white;
+    background-color: var(--darkBlue);
+    margin: 5px;
+    padding: 0 5px;
+    border-radius: 50%;
+
 }
 /* clients waiting panel */
 .waiting-patiens{
@@ -656,11 +662,11 @@ input:invalid:not(:placeholder-shown) + .wrong {
     padding: 16px;
 }
 .one-waiting{
-    width: 371.2px;
+    width:80%;
     height: 100px;
     background-color: white;
     border-radius: 50px 0 0 50px;
-    margin: 15px;
+    margin: 15px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -713,5 +719,12 @@ input:invalid:not(:placeholder-shown) + .wrong {
         padding-right: 20px;
     }
 }
-
+@media (max-width: 1370px) {
+   .timelineContainer{
+       padding-right: 5px;
+   }
+    .consultation-1{
+        margin-left: 17px;
+    }
+}
 

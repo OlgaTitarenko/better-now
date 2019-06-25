@@ -33,6 +33,11 @@
     <main class="row flex-grow-1 h-100" id="main-area">
         <div class="col-lg-8 col-md-8 col-sm-8 two-thirds flex-grow-1">
             <!-- customer top panel -->
+            <div class="row iframe-panel" id="panel-iframe">
+                <div class="col-lg-12 col-md-12">
+                    IFrame
+                </div>
+            </div>
             <div class="row customer" id="panel-customer">
                 <div class="col-lg-12 col-md-12">
                     <h2 id="panel-customer-name">Customer name</h2>
@@ -104,7 +109,16 @@
                     </div>
                 </div>
             </div>
-
+            <div class="row waitingCall-panel" id="panel-waiting-call">
+                <div class="col-lg-12 col-md-12">
+                    Waiting call
+                </div>
+            </div>
+            <div class="row main-call-panel" id="panel-main-call">
+                <div class="col-lg-12 col-md-12">
+                    Main call
+                </div>
+            </div>
             <div class="row ">
                 <div class="col-lg-3 col-md-3 timelineContainer" id="panel-timeline">
                     <h2>ÚLTIMAS CONSULTAS</h2>
@@ -186,7 +200,7 @@
         </div>
 
         <div class="col-md-4">
-            <div class="call-panel" id="panel-mp-call-control">
+            <div class="call-panel" id="panel-mp-status">
                 <h2>Seleccione o seu estado:</h2>
                 <div class="row">
                     <div class="btn-group btn-group-toggle call-list" data-toggle="buttons" id="set-status">
@@ -205,10 +219,19 @@
                     </div>
                 </div>
             </div>
+            <div class="call-control-panel" id="panel-call-control">
+                <h2>call control</h2>
+                <div class="row"></div>
+            </div>
+            <div class="call-notes-panel" id="panel-call-notes">
+                <h2>Notas</h2>
+                <div class="row"></div>
+            </div>
             <div class="last-consultations" id="panel-last-consultations">
                 <h2>ÚLTIMAS CONSULTAS</h2>
                 <div class="row">
                     <div class="consultations-block">
+                        <div class="prew">&lt;</div>
                         <div class="consultation-1">
                             <img src="img/doctor.jpg" alt="" id="photo-img-const1">
                             <h3>Antonio Mendes</h3>
@@ -234,6 +257,7 @@
                             <h3>Antonio Mendes</h3>
                             <p>47 anos</p>
                         </div>
+                        <div class="next">&gt;</div>
                     </div>
                     <a href="#">Ver Histórico de consultas</a>
                 </div>
@@ -281,6 +305,11 @@
                         </div>
                         <div class="time"> 10 min</div>
                     </div>
+                </div>
+            </div>
+            <div class="waiting-patients-call-panel" id="panel-waiting-patients-call">
+                <div class="row">
+                    waiting panel
                 </div>
             </div>
         </div>
