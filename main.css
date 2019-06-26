@@ -205,7 +205,33 @@ input:invalid:not(:placeholder-shown) + .wrong {
     color: var(--blackColor);
     cursor: pointer;
 }
+
 /*main client page*/
+
+/*waiting call panel*/
+.waitingCall-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15%;
+}
+.waitingCall-panel > .waitingCallBlock{
+    display: flex;
+}
+.waitingCallBlock > .icon-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+.icon-call > span{
+    padding-top: 28px;
+}
+/*main call panel*/
+
+/*customer panel*/
 .customer{
     background-color: rgba(189,227,247,0.5);
     border-left: 10px solid  var(--lightBlue);
@@ -303,9 +329,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     padding-top: 5px;
 }
 /*timeline*/
-
 .timelineContainer{
-    width: 260px;
     margin: 0;
 }
 .timelineContainer h2{
@@ -489,7 +513,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     color: var(--waiting-call);
     position: relative;
 }
-.waiting-call:before{
+.call-list > .waiting-call:before{
     content: '';
     position: absolute;
     background-image: url("./img/waiting-call.svg");

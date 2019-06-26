@@ -32,12 +32,13 @@
 
     <main class="row flex-grow-1 h-100" id="main-area">
         <div class="col-lg-8 col-md-8 col-sm-8 two-thirds flex-grow-1">
-            <!-- customer top panel -->
+
             <div class="row iframe-panel" id="panel-iframe">
                 <div class="col-lg-12 col-md-12">
                     IFrame
                 </div>
             </div>
+            <!-- customer top panel -->
             <div class="row customer" id="panel-customer">
                 <div class="col-lg-12 col-md-12">
                     <h2 id="panel-customer-name">Customer name</h2>
@@ -109,9 +110,20 @@
                     </div>
                 </div>
             </div>
-            <div class="row waitingCall-panel" id="panel-waiting-call">
-                <div class="col-lg-12 col-md-12">
-                    Waiting call
+            <div class="row" id="panel-waiting-call">
+                <div class="col-lg-12 col-md-12  waitingCall-panel">
+                    <h2>Iniciar o atendimento deste cliente?</h2>
+                    <div class="waitingCallBlock">
+                        <div class="icon-call">
+                            <img src="img/subtraction-3.svg" alt="do not answer">
+                            <span>RECUSAR</span>
+                        </div>
+                        <div class="icon-call">
+                            <img src="img/subtraction-1.svg" alt="answer the call">
+                            <span>ACEITAR</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="row main-call-panel" id="panel-main-call">
