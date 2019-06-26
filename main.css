@@ -230,6 +230,23 @@ input:invalid:not(:placeholder-shown) + .wrong {
     padding-top: 28px;
 }
 /*main call panel*/
+.main-call-panel{
+    position: relative;
+}
+.video-call{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 600;
+    width: 100%;
+}
+.main-call-panel h2>span{
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 18px;
+    border-bottom: 3px solid var(--timelineYellow);
+    margin-left: 270px;
+}
+
 
 /*customer panel*/
 .customer{
@@ -332,12 +349,11 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .timelineContainer{
     margin: 0;
 }
-.timelineContainer h2{
+.timelineContainer h2 > span{
     font-family: GothamRounded, sans-serif;
     font-size: 18px;
     border-bottom: 3px solid var(--timelineYellow);
     margin: 20px;
-    width: 180px;
 }
 .timeline > ul {
     list-style-type: none;
@@ -409,10 +425,11 @@ input:invalid:not(:placeholder-shown) + .wrong {
     color: var(--darkBlue);
     font-family: GothamRoundedMedium, sans-serif;
     font-size: 20px;
-    margin: 17px;
+    margin: 15px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 25px;
 }
 .new-notes > img {
     background-color: var(--darkBlue);
@@ -458,6 +475,45 @@ input:invalid:not(:placeholder-shown) + .wrong {
 .active-note{
     background-color: var(--timelineActive);
 }
+/*call control panel*/
+.call-control-panel{
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.call-control-panel .call-control-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.call-control-panel h3{
+    color: var(--darkBlue);
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 14px;
+    margin: 7px;
+}
+.timer{
+    padding: 35px;
+    font-family: GothamRoundedBookItalic, sans-serif;
+    font-size: 34px;
+}
+.call-settings{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 16px;
+}
+.call-settings .terminal{
+    font-family: GothamRoundedMedium, sans-serif;
+    font-size: 20px;
+    color: var(--wrong);
+    display: flex;
+    align-items: center;
+}
+.terminal img{
+    width: 31px;
+    height: 31px;
+    padding-left: 10px;
+}
+
 /*call container*/
 .call-panel{
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
