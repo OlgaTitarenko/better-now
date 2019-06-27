@@ -249,14 +249,22 @@
                 </div>
             </div>
             <div class="call-notes-panel" id="panel-call-notes">
-                <h2>Notas</h2>
-                <div class="row"></div>
+                <div class="notes-header"><img src="img/pen.svg"> <span>NOTAS</span></div>
+                <div class="row">
+                    <textarea name="note" id="" placeholder="Escrever Nota"></textarea>
+                    <div  class="note-checkbox  ">
+                        <label class="label-container"  for="criar-Nota">Criar Nota
+                            <input type="checkbox" id="criar-Nota">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
             <div class="last-consultations" id="panel-last-consultations">
                 <h2>ÚLTIMAS CONSULTAS</h2>
                 <div class="row">
                     <div class="consultations-block">
-                        <div class="prew">&lt;</div>
+                        <span class="prew"></span>
                         <div class="consultation-1">
                             <img src="img/doctor.jpg" alt="" id="photo-img-const1">
                             <h3>Antonio Mendes</h3>
@@ -282,7 +290,7 @@
                             <h3>Antonio Mendes</h3>
                             <p>47 anos</p>
                         </div>
-                        <div class="next">&gt;</div>
+                        <span class="next"></span>
                     </div>
                     <a href="#">Ver Histórico de consultas</a>
                 </div>
@@ -333,8 +341,10 @@
                 </div>
             </div>
             <div class="waiting-patients-call-panel" id="panel-waiting-patients-call">
-                <div class="row">
-                    waiting panel
+                <div class="row waiting-call-panel-small">
+                    <p>CLIENTES EM ESPERA</p>
+                    <p>4</p>
+                    <img src="img/oncall.svg" alt="on call" >
                 </div>
             </div>
         </div>
