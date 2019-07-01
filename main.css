@@ -498,7 +498,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     background-color: var(--call-list);
     left: 15.5%;
     top:0;
-    z-index: 400;
+    z-index: 1;
 }
 .call-list input{
     content: '';
@@ -528,7 +528,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     content: '';
     position: absolute;
     background-image: url("./img/waiting-call.svg");
-    left:40%;
+    left:35%;
     top: -35px;
     width: 32px;
     height: 32px;
@@ -542,7 +542,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     content: '';
     position: absolute;
     background-image: url("./img/on-call.svg");
-    left:40%;
+    left:30%;
     top: -35px;
     width: 32px;
     height: 32px;
@@ -556,7 +556,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     content: '';
     position: absolute;
     background-image: url("./img/on-call.svg");
-    left:40%;
+    left:35%;
     top: -35px;
     width: 32px;
     height: 32px;
@@ -565,6 +565,7 @@ input:invalid:not(:placeholder-shown) + .wrong {
     border-radius: 50%;
     border: solid 1px var(--start-call);
 }
+
 /*call control panel*/
 .call-control-panel{
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
